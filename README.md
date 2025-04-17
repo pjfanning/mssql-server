@@ -10,7 +10,8 @@ Based on https://github.com/microsoft/mssql-docker/blob/master/linux/preview/exa
 ## Usage
 
 ```
-docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=Str0ngPassword" -p 1433:1433 -d pjfanning/mssql-server:2022-latest
+docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=Str0ngPassword" \
+-p 1433:1433 -d pjfanning/mssql-server:2022-latest
 ```
 
 * The database that is pre-installed is called `docker` with a user called `docker` with DDL, read and write permissions.
